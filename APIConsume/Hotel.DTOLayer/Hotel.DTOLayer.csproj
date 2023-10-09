@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dtos\CrewDto\**" />
+    <Compile Remove="Dtos\ServiceDto\**" />
+    <Compile Remove="Dtos\SubscribeDto\**" />
+    <EmbeddedResource Remove="Dtos\CrewDto\**" />
+    <EmbeddedResource Remove="Dtos\ServiceDto\**" />
+    <EmbeddedResource Remove="Dtos\SubscribeDto\**" />
+    <None Remove="Dtos\CrewDto\**" />
+    <None Remove="Dtos\ServiceDto\**" />
+    <None Remove="Dtos\SubscribeDto\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.19">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.19">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.EntityLayer\Hotel.EntityLayer.csproj" />
+  </ItemGroup>
+
+</Project>

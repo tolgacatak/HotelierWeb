@@ -1,0 +1,30 @@
+﻿@model List<CrewViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Employee Name</th>
+        <th>Employee Title</th>
+        <th>Delete</th>
+        <th>Update</th>
+        <th>Details</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <th>@item.CrewID</th>
+            <td>@item.Name</td>
+            <td>@item.Title</td>
+            <td><a href="/Crew/DeleteCrew/@item.CrewID" class="btn mb-1 btn-rounded btn-outline-danger">Delete</a></td>
+            <td><a href="/Crew/UpdateCrew/@item.CrewID" class="btn mb-1 btn-rounded btn-outline-success">Update</a></td>
+            <td><a href="#" class="btn mb-1 btn-rounded btn-outline-dark">Details</a></td>
+        </tr>
+    }
+</table>
+<a href="/Crew/AddCrew" class="btn mb-1 btn-rounded btn-outline-info"> New Employee Entry </a>
+

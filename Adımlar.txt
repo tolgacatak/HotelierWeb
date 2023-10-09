@@ -1,0 +1,43 @@
+--Api Testi ve Swagger
+--Api Cors ve Consume(API Controller tarafý) (M-V-C)
+--Testimonial Controller
+--DTO Layer
+--Service Hizmeti with Dto
+--Identity Kütüphanesi ekleme ve kullanma
+--Register(Dto kullanýldý, Identity)
+--Login Ýþlemleri(Dto kullanýldý, Identity)
+--Tema eklemesi
+--View Component
+--About Consume(Dinamik Yapýldý)
+--About Dto
+--Subscribe View Component ile deðil, View Partial ile yapýldý. Çünkü HttpGet ve HttpPost ihtiyacýmýz var.
+--Katalog Kýsmý(Tüm Viev Partiallar için yapýldý /w Dto)
+Rezervasyon Ýþlemi(Ýþlem, admin yetkili kiþinin önüne düþecek. RezervBekletiliyor,vs) hakkýnda bilgi verilecek)
+--Rapid Api kullanýmý ve örnekleri
+--JSon Web Token
+--Postman API kullanýmý ve JSon Web Token ile beraber kullanma
+--Contact Panel
+--Admin About düzenlemesi
+--Room Dinamik hale geldi
+--Guest consume edildi(controller yazýldý)
+--Fluent Validation(Kullanýcýya veri giriþinde kýsýt koyma, boþ geçilememe vb)
+--Mail düzenlemeleri(send message ve contact te dünzenlemeler)
+--Contact DB'ye düþmüyor. Ona bak!
+--Mail gönderme iþlemi(MimeMessage Paket ile)
+--Authorization
+--Text File ve Image gönderme iþlemleri
+--message category(related entity)
+--user list
+--work location
+Work Location ý iliþkili halet getirmek için 137-140-141
+--New Location Entry kýsmýný yap!
+--Hotel Location Update ve Delete kýsýmlarýný yap!
+--DashBoard Kýsmý
+--Social Media Linkleri girilecek
+Rolleme kýsmý
+user listteki rol kýsmýný ya sil ya da rol kýsmýndan çek(uyumlu hale getir)
+
+
+
+
+
